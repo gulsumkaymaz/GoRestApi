@@ -1,6 +1,7 @@
 Feature: Api testing for CRUD operators
 
-  Background: User given api url "https://gorest.co.in/"
+  Background:
+  Given User given api url "https://gorest.co.in/"
 
   Scenario Outline: POST-Create a new user
     Given set api endpoint "public/v2/users"
@@ -15,4 +16,4 @@ Feature: Api testing for CRUD operators
 
     Examples:
       | Name     | Gender | Email               | Status |
-      | John Boe | Male   | johnboe23@gmail.com | Active |
+      | John Doe | Male   | johndoe23@gmail.com | Active |
