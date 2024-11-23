@@ -1,7 +1,7 @@
 Feature: Api testing for CRUD operators
 
   Background:
-  Given user given api url "https://gorest.co.in/"
+    Given user given api url "https://gorest.co.in/"
 
   Scenario Outline: POST-Create a new user
     Given set api endpoint "public/v2/users"
@@ -13,7 +13,9 @@ Feature: Api testing for CRUD operators
     And validate the user email is "<Email>"
     And validate the user status is "<Status>"
 
-
     Examples:
       | Name     | Gender | Email               | Status |
       | John Doe | Male   | johndoe23@gmail.com | Active |
+
+ #  userDetails.json---> bu değeleri feature file dan almamız lazım ve parametre seklinde gonderilmesi lazım
+  # onun icin yukarıdakileri parametirize etmek gerekiyor. create request yapmak için burası bizim templatemiz oluyor

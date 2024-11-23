@@ -11,12 +11,17 @@ public class ApiSteps extends ApiValidation {
 
     @Given("user given api url {string}")
     public void userGivenApiUrl(String url) {
+        //sistem environment için url i set yapiyoruz
         RestAssured.baseURI = url;
         System.out.println("user given api url " + url);
     }
 
     @Given("set api endpoint {string}")
     public void setApiEndpoint(String endpoint) {
+        // api'n path ini set yapıyorum
+        RestAssured.basePath= endpoint;
+        // port yapmak istersem: "https://gorest.co.in:8080/public/v1/users"
+        // RestAssured.port=8080;
         System.out.println("set api endpoint " + endpoint);
     }
 
