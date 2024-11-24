@@ -17,5 +17,6 @@ Feature: Api testing for CRUD operators
       | Name     | Gender | Email               | Status |
       | John Doe | Male   | johndoe23@gmail.com | Active |
 
+    Then sourcetree denemesi
  #  userDetails.json---> bu değeleri feature file dan almamız lazım ve parametre seklinde gonderilmesi lazım
   # onun icin yukarıdakileri parametirize etmek gerekiyor. create request yapmak için burası bizim templatemiz oluyor

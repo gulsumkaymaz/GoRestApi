@@ -57,4 +57,9 @@ public class ApiSteps extends ApiValidation {
     @And("validate the user status is {string}")
     public void validateTheUserStatusIs(String arg0) {
     }
+
+    @Then("sourcetree denemesi")
+    public void sourcetreeDenemesi() {
+        System.out.println("Sourcetree denemesi");
+    }
 }
