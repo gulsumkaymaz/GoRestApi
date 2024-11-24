@@ -68,7 +68,6 @@
                         </property>
                     </properties>
                 </configuration>
-
             </plugin>
             <plugin>
                 <groupId>net.masterthought</groupId>
@@ -77,16 +76,18 @@
                 <executions>
                     <execution>
                         <id>execution</id>
-                        <phase>package</phase>
+                        <phase>verify</phase>
                         <goals>
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>AutoTraders.com Smoke Test</projectName>
-                            <outputDirectory>${project.build.directory}/myReports</outputDirectory>
+                            <projectName>ProjeAdı</projectName>
+                            <outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
+                            <jsonFiles>
+                                <jsonFile>${project.build.directory}/cucumber-reports/cucumber.json</jsonFile>
+                            </jsonFiles>
                         </configuration>
                     </execution>
-
                 </executions>
             </plugin>
         </plugins>

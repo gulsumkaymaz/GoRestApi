@@ -27,12 +27,15 @@ public class ApiSteps extends ApiValidation {
 
     @And("user creates new user with request body {string},{string},{string},{string}")
     public void userCreatesNewUserWithRequestBody(String name, String gender, String email, String status) {
+        postMethod(name,gender,email,status);
         System.out.println("User creates new user with request body " + name + gender + email + status);
     }
 
+
+
     @Then("validate the status code {int}")
     public void validateTheStatusCode(int arg0) {
-        System.out.println("test");
+
     }
 
     @And("validate the userId is not null")
