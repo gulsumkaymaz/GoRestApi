@@ -32,6 +32,7 @@ public class ApiSteps extends ApiValidation {
 
     @Then("validate the status code {int}")
     public void validateTheStatusCode(int arg0) {
+        System.out.println("test");
     }
 
     @And("validate the userId is not null")
